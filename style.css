@@ -97,10 +97,7 @@ a {
 
 }
 
-.button{
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
+
     
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 
@@ -218,8 +215,15 @@ a {
 /*------------------------------ Experiencia Profesional---------------------------------*/
 .Proyecto-alura{
 
-    width: 500px;
+    max-width: 50%;
+    height: auto;
+    flex-direction: column;
+
 }
+.proyectos__nombre{
+    text-align: center;
+}/*
+
 /*------------------------------ Sección de Contacto ---------------------------------*/
 
 
