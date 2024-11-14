@@ -1,18 +1,21 @@
 /* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
 */
 :root {
-    --color-de-fondo: #d7f8ba;
+    --color-de-fondo: #bbf3f0;
     --color-de-fondo-menu: #ffffff;
     --color-de-link: #000000;
 }
 
 body {
-    background-color: var(--color-de-fondo);
+    background-image: url(assets/jairph-rC6fkXIiSF4-unsplash.jpg);
     font-family: 'Raleway', sans-serif;
     margin: 0;
     box-sizing: border-box;
     padding: 0;
     line-height: 1.6;
+    background-position:center ;
+    background-size: auto;
+
 }
 
 ol, ul, li {
@@ -31,10 +34,12 @@ a {
     justify-content: flex-start;
     align-items: baseline;
     background-color: var(--color-de-fondo-menu);
+    background: #ffffffa4;
     margin: 1rem;
     border-radius: 1rem;
     position: fixed;
     width: 98%;
+    z-index: 1;
 }
 
 .cabecera__logo {
@@ -44,8 +49,7 @@ a {
 
 .cabecera__titulo {
     font-size: 1.2rem;
-    text-align: center;
-    padding-left: 1rem;
+    padding-left: 3rem;
 
 }
 
@@ -66,10 +70,16 @@ a {
     margin: 0.2rem;
 }
 .presentacion__foto{
-    width: 180px;
-    height: 180px;
-}
+    width: 250px;
+    
 
+}
+.presentacion__contenedor{
+
+    align-content: center;
+
+
+}
 .presentacion__subtitulo{
     text-align: justify;
     
@@ -80,7 +90,7 @@ a {
 .redes{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 15px;
     font-size:larger;
     font-weight: bolder;
@@ -92,69 +102,85 @@ a {
 .sobre-mi{
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: center;
     padding: 1rem;
+    margin  : 2rem;
+    background: #fafafa10;
+    backdrop-filter: blur(0.2rem);
+    border-radius: 5rem;
+
+}
+.redes__img{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.sobre-mi__texto,
+.presentacion__subtitulo{
+    text-align: justify;
+    color: white;
+    text-shadow: 1px 1px 0px #000000;
+    font-size: 18px;
 }
 
-/*------------------------------ Sección de Habilidades ------------------------------*/
-.habilidades{
-margin: 1rem;
-    
+.presentacion__titulo{
+    text-shadow: 1px 1px 0px #000000;
+    color: white;
 }
-.habilidades__lista{
+
+/*--------------Sección de Habilidades y ección de Aficiones  ------------------------------*/
+
+
+.habilidades,
+.aficiones{
+    padding: 1rem;
+    text-align: center;
+    align-content: center;
+    border-radius: 5rem;
+    margin: 2rem;
+    background: #fafafa10;
+    backdrop-filter: blur(0.2rem);
+
+
+}
+
+.habilidades__nombre,
+.aficiones__nombre{
+    color: white;
+    text-shadow:  1px 2px 0px #000000;
+}
+
+.aficiones__titulo,
+.habilidades__titulo,
+.sobre-mi__titulo{
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 3px 4px 0px #000000;
+}
+.habilidades__lista,
+.aficiones__lista{
   
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     padding: 0;
     flex-wrap: wrap;
-
-
 }
-.habilidades__elemento{
-    background-color: #c5c34b;
-    border-radius: 50rem;
-    padding: 1.5rem;
-    width: 150px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgb(34,193,195);
-background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-
-}
-/*------------------------------ Sección de Aficiones --------------------------------*/
-.aficiones{
-    margin: 1rem;
-
-}
-.aficiones__lista{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    padding: 0;
-    flex-wrap: wrap;
-    
-
-
-}
+.habilidades__elemento,
 .aficiones__elemento{
-    background-color: #c5c34b;
-    border-radius:50rem;
+    border-radius: 1rem;
     padding: 1.5rem;
-    width: 150px;
+    width: 200px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: linear-gradient(180deg, rgba(5, 110, 112, 0.575) 0%, rgba(45, 253, 243, 0.432) 100%);
+
 }
+
 /*------------------------------ Sección de Proyectos --------------------------------*/
 
 
@@ -169,7 +195,7 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
     .cabecera {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+
     }
 
     .cabecera__logo {
@@ -193,9 +219,9 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
     }
 
     .habilidades__elemento {
-        width: 90px;
-        height: 120px;
-        padding: 0.5rem;
+        width: 100px;
+        height: 100px;
+        padding: 1rem;
     }
 }
 
