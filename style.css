@@ -27,24 +27,38 @@ a {
 /* ------------------------------ Sección Menú -------------------------------*/
 .cabecera {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
     background-color: var(--color-de-fondo-menu);
+    margin: 1rem;
+    border-radius: 1rem;
+    position: fixed;
+    width: 98%;
 }
 
 .cabecera__logo {
-    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    max-width: 100px; /* Ajuste para pantallas pequeñas */
+    margin: 1rem;
 }
 
 .cabecera__titulo {
     font-size: 1.2rem;
     text-align: center;
+    padding-left: 1rem;
+
 }
 
 .navegacion__lista {
+    .navegacion__elemento:nth-child(1),
+    .navegacion__elemento:nth-child(2),
+    .navegacion__elemento:nth-child(3),
+    .navegacion__elemento:nth-child(4),
+    .navegacion__elemento:nth-child(5){
     display: none;
+    }
 }
+
 
 .navegacion__elemento a {
     font-size: 0.9rem;
@@ -70,6 +84,7 @@ a {
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
+/*
 @media (min-width: 768px) {
     .cabecera {
         flex-direction: row;
@@ -96,10 +111,10 @@ a {
         font-size: 1rem;
     }
 }
-
+*/
 /* Pantallas grandes */
+/*
 @media (min-width: 1024px) {
-    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
     .cabecera__titulo {
         font-size: 1.8rem;
     }
@@ -107,4 +122,4 @@ a {
     .navegacion__elemento a {
         font-size: 1.1rem;
     }
-}
+}*/
