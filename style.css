@@ -57,7 +57,7 @@ a {
     font-size: 0.9rem;
 }
 /* ------------------------------ Sección Presentación ------------------------------*/
-/*
+
 .presentacion{
     display: flex;
     padding-top: 95px;
@@ -73,23 +73,24 @@ a {
     text-align: justify;
 
 }
-*/
+
+
 .redes{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-left: 0;
+    justify-content: flex-start;
+    gap: 15px;
 
 }
-.redes__img{
-    width: 40px;
-    height: auto;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
+    
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 
-
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 1rem;
+}
 /*------------------------------ Sección de Habilidades ------------------------------*/
 
 
@@ -105,7 +106,7 @@ a {
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
-
+/*
 @media (min-width: 768px) {
     .cabecera {
         flex-direction: row;
@@ -133,7 +134,7 @@ a {
         font-size: 1rem;
     }
 }
-
+*/
 /* Pantallas grandes */
 /*
 @media (min-width: 1024px) {
