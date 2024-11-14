@@ -63,6 +63,7 @@ a {
     padding-top: 95px;
     padding-left: 15px;
     flex-direction: column;
+    margin: 0.2rem;
 }
 .presentacion__foto{
     width: 180px;
@@ -71,6 +72,7 @@ a {
 
 .presentacion__subtitulo{
     text-align: justify;
+    
 
 }
 
@@ -80,6 +82,8 @@ a {
     flex-direction: row;
     justify-content: flex-start;
     gap: 15px;
+    font-size:larger;
+    font-weight: bolder;
 
 }
     
@@ -91,12 +95,66 @@ a {
     text-align: justify;
     padding: 1rem;
 }
+
 /*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades{
+margin: 1rem;
+    
+}
+.habilidades__lista{
+  
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0;
+    flex-wrap: wrap;
 
 
+}
+.habilidades__elemento{
+    background-color: #c5c34b;
+    border-radius: 50rem;
+    padding: 1.5rem;
+    width: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(34,193,195);
+background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+
+}
 /*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones{
+    margin: 1rem;
+
+}
+.aficiones__lista{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0;
+    flex-wrap: wrap;
+    
 
 
+}
+.aficiones__elemento{
+    background-color: #c5c34b;
+    border-radius:50rem;
+    padding: 1.5rem;
+    width: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
 /*------------------------------ Sección de Proyectos --------------------------------*/
 
 
@@ -106,7 +164,7 @@ a {
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
-/*
+
 @media (min-width: 768px) {
     .cabecera {
         flex-direction: row;
@@ -133,10 +191,16 @@ a {
     .navegacion__elemento a {
         font-size: 1rem;
     }
+
+    .habilidades__elemento {
+        width: 90px;
+        height: 120px;
+        padding: 0.5rem;
+    }
 }
-*/
+
 /* Pantallas grandes */
-/*
+
 @media (min-width: 1024px) {
     .cabecera__titulo {
         font-size: 1.8rem;
@@ -145,4 +209,4 @@ a {
     .navegacion__elemento a {
         font-size: 1.1rem;
     }
-}*/
+}
