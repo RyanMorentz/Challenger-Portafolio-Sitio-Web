@@ -50,21 +50,42 @@ a {
 }
 
 .navegacion__lista {
-    .navegacion__elemento:nth-child(1),
-    .navegacion__elemento:nth-child(2),
-    .navegacion__elemento:nth-child(3),
-    .navegacion__elemento:nth-child(4),
-    .navegacion__elemento:nth-child(5){
     display: none;
     }
-}
-
 
 .navegacion__elemento a {
     font-size: 0.9rem;
 }
 /* ------------------------------ Sección Presentación ------------------------------*/
+/*
+.presentacion{
+    display: flex;
+    padding-top: 95px;
+    padding-left: 15px;
+    flex-direction: column;
+}
+.presentacion__foto{
+    width: 180px;
+    height: 180px;
+}
 
+.presentacion__subtitulo{
+    text-align: justify;
+
+}
+*/
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+
+}
+.redes__img{
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 
@@ -84,7 +105,7 @@ a {
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
-/*
+
 @media (min-width: 768px) {
     .cabecera {
         flex-direction: row;
@@ -105,13 +126,14 @@ a {
         flex-direction: row;
         gap: 1rem;
         margin-top: 0;
+        margin-right: 0;
     }
 
     .navegacion__elemento a {
         font-size: 1rem;
     }
 }
-*/
+
 /* Pantallas grandes */
 /*
 @media (min-width: 1024px) {
