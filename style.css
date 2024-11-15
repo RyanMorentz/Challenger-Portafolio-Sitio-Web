@@ -83,8 +83,6 @@ a {
     
 
 }
-
-
 .redes{
     display: flex;
     flex-direction: row;
@@ -95,7 +93,6 @@ a {
     
 
 }
-
     
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 .sobre-mi,
@@ -133,8 +130,7 @@ a {
 
 /*--------------Sección de Habilidades y ección de Aficiones  ------------------------------*/
 .habilidades__nombre,
-.aficiones__nombre,
-.formacion__titulo{
+.aficiones__nombre{
     color: white;
     text-shadow:  1px 2px 0px #000000;
 }
@@ -142,10 +138,15 @@ a {
 .aficiones__titulo,
 .habilidades__titulo,
 .sobre-mi__titulo,
-.contacto__titulo{
-    font-size: 2rem;
-    color: #ffffff;
-    text-shadow: 3px 4px 0px #000000;
+.contacto__titulo,
+.formacion__titulo,
+.titulo-proyecto{  
+    font-family: 'Roboto Mono', 'Arial', sans-serif; 
+    font-size: 3rem;
+    color: white; /* Color del título */
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow:  1px 2px 0px #000000;
 }
 .habilidades__lista,
 .aficiones__lista,
@@ -228,14 +229,6 @@ a {
     backdrop-filter: blur(0.2rem);
 }
   
-.proyectos h2 {
-    font-family: 'Roboto Mono', 'Arial', sans-serif; 
-    font-size: 3rem;
-    color: white; /* Color del título */
-    text-align: center;
-    margin-bottom: 3rem;
-    text-shadow:  1px 2px 0px #000000;
-}
   
 .Proyecto {
     display: flex;
@@ -391,10 +384,12 @@ a {
     .presentacion__titulo{
         font-size: 50px;
     }
+    .sobre-mi__texto,
     .presentacion__subtitulo{
         text-align: justify;
         font-size: 30px;
     }
+    
 
     
 }
