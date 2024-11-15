@@ -170,6 +170,15 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.habilidades__elemento:hover,
+.aficiones__elemento:hover,
+.formacion__elemento:hover{
+    transform: translateY(-8px); /* Efecto de desplazamiento más pronunciado */
+    background-color: #f8d964; /* Cambia a amarillo */
 }
 
 .habilidades__elemento{
@@ -237,7 +246,6 @@ a {
     margin-bottom: 2rem;
     background: linear-gradient(180deg, rgba(190, 190, 163, 0.247) 0%, rgba(253, 156, 45, 0.192) 100%);
     backdrop-filter: blur(0.2rem);
-    flex-wrap: wrap-reverse;
 }
   
 .Proyecto-alura {
