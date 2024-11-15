@@ -382,8 +382,19 @@ a {
         font-size: 1.8rem;
 
     }
+    .presentacion__contenedor{
 
-    .navegacion__elemento a {
-        font-size: 1.1rem;
+        align-content: center;
+    
+    
     }
+    .presentacion__titulo{
+        font-size: 50px;
+    }
+    .presentacion__subtitulo{
+        text-align: justify;
+        font-size: 30px;
+    }
+
+    
 }
