@@ -142,7 +142,7 @@ a {
 .formacion__titulo,
 .titulo-proyecto{  
     font-family: 'Roboto Mono', 'Arial', sans-serif; 
-    font-size: 3rem;
+    font-size: 2rem;
     color: white; /* Color del título */
     text-align: center;
     margin-bottom: 3rem;
@@ -263,7 +263,7 @@ a {
   
 .proyecto__detalles h3 {
     font-family: 'Roboto Mono', 'Arial', sans-serif; /* Fuente de repuesto */
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white; /* Color del título del proyecto */
     text-shadow:  1px 2px 0px #000000;
     
