@@ -609,5 +609,19 @@ a {
     .presentacion__subtitulo {
         font-size: 1.7rem;
     }
-    
+    .aficiones__titulo,
+    .habilidades__titulo,
+    .sobre-mi__titulo,
+    .contacto__titulo,
+    .formacion__titulo,
+    .titulo-proyecto{  
+        font-size: 3rem;
+
+      
+    }
+    .habilidades__nombre,
+    .aficiones__nombre{
+
+        font-size: 1.5rem;
+    }
 }
