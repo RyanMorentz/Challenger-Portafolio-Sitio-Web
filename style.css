@@ -49,17 +49,15 @@ a {
 
 .cabecera__titulo {
     font-size: 1.2rem;
-    padding-left: 3rem;
 
 }
 
 .navegacion__lista {
     display: none;
-    }
-
-.navegacion__elemento a {
-    font-size: 0.9rem;
 }
+
+
+
 /* ------------------------------ Sección Presentación ------------------------------*/
 
 .presentacion{
@@ -67,7 +65,7 @@ a {
     padding-top: 95px;
     padding-left: 15px;
     flex-direction: column;
-    margin: 0.2rem;
+    margin: 1rem;
 }
 .presentacion__foto{
     width: 250px;
@@ -90,22 +88,20 @@ a {
 .redes{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     gap: 15px;
     font-size:larger;
     font-weight: bolder;
+    
 
 }
 
-
     
 /* ------------------------------ Sección sobre mí ----------------------------------*/
-
 .sobre-mi,
 .habilidades,
 .aficiones,
-.formacion,
-.proyectos{
+.formacion{
     padding: 1rem;
     text-align: center;
     align-content: center;
@@ -136,22 +132,6 @@ a {
 }
 
 /*--------------Sección de Habilidades y ección de Aficiones  ------------------------------*/
-
-.sobre-mi,
-.habilidades,
-.aficiones,
-.formacion,
-.proyectos,
-.contacto{
-    padding: 1rem;
-    text-align: center;
-    align-content: center;
-    border-radius: 5rem;
-    margin: 2rem;
-    background: #fafafa10;
-    backdrop-filter: blur(0.2rem);
-}
-
 .habilidades__nombre,
 .aficiones__nombre,
 .formacion__titulo{
@@ -162,7 +142,6 @@ a {
 .aficiones__titulo,
 .habilidades__titulo,
 .sobre-mi__titulo,
-.proyectos__titulo,
 .contacto__titulo{
     font-size: 2rem;
     color: #ffffff;
@@ -179,6 +158,7 @@ a {
     padding: 0;
     flex-wrap: wrap;
 }
+
 .habilidades__elemento,
 .aficiones__elemento,
 .formacion__elemento{
@@ -190,10 +170,26 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(5, 110, 112, 0.575) 0%, rgba(45, 253, 243, 0.432) 100%);
-
 }
 
+.habilidades__elemento{
+
+    background: linear-gradient(180deg, rgba(112, 5, 5, 0.575) 0%, rgba(253, 156, 45, 0.432) 100%);
+
+    
+}
+.aficiones__elemento{
+
+    background: linear-gradient(180deg, rgba(5, 96, 112, 0.575) 0%, rgba(121, 224, 250, 0.452) 100%);
+
+
+}
+.formacion__elemento{
+
+    background: linear-gradient(180deg, rgba(199, 171, 46, 0.575) 0%, rgba(253, 156, 45, 0.432) 100%);
+
+
+}
 /*------------------------------ Sección de Proyectos --------------------------------*/
 
 
@@ -202,8 +198,7 @@ a {
     font-size: 18px;
     align-items: center;
 }
-.formacion__nombre,
-.proyectos__nombre{
+.formacion__nombre{
     color: white;   
     text-shadow:  1px 2px 0px #000000;
 
@@ -213,16 +208,115 @@ a {
     width: 250px;
 }
 /*------------------------------ Experiencia Profesional---------------------------------*/
+
+.proyectos {
+    padding: 1rem;
+    text-align: center;
+    align-content: center;
+    border-radius: 5rem;
+    margin: 2rem;
+    background: #fafafa10;
+    backdrop-filter: blur(0.2rem);
+}
+  
+.proyectos h2 {
+    font-family: 'Roboto Mono', 'Arial', sans-serif; 
+    font-size: 3rem;
+    color: white; /* Color del título */
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow:  1px 2px 0px #000000;
+}
+  
+.Proyecto {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Color de fondo del proyecto */
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(180deg, rgba(190, 190, 163, 0.247) 0%, rgba(253, 156, 45, 0.192) 100%);
+    backdrop-filter: blur(0.2rem);
+    flex-wrap: wrap-reverse;
+}
+  
+.Proyecto-alura {
+    width: 30%; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+  
+.Proyecto-alura:hover {
+    transform: scale(1.05); /* Efecto de hover para aumentar el tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+}
+  
+.proyecto__detalles {
+    flex: 1;
+    text-align: left;
+    
+}
+  
+.proyecto__detalles h3 {
+    font-family: 'Roboto Mono', 'Arial', sans-serif; /* Fuente de repuesto */
+    font-size: 2rem;
+    color: white; /* Color del título del proyecto */
+    text-shadow:  1px 2px 0px #000000;
+    
+}
+  
+
+.btn{
+    flex-direction: row;
+}
 .Proyecto-alura{
 
     max-width: 50%;
     height: auto;
-    flex-direction: column;
+    border-radius: 10px;
+}
+
+.btn-repositorio{
+  background:linear-gradient(270deg, rgba(74, 208, 241, 0.575) 0%, rgba(45, 83, 253, 0.432) 100%);
+  color:#fff;
+  border:none;
+  position:relative;
+  height:45px;
+  font-size:1em;
+  padding:2 1em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  flex-direction: row;
 
 }
-.proyectos__nombre{
-    text-align: center;
-}/*
+.btn-repositorio:hover{
+  background:linear-gradient(130deg, rgba(74, 208, 241, 0.575) 0%, rgba(45, 83, 253, 0.432) 100%);
+  color:#e5ff00;
+}
+.btn-repositorio:before,.btn-repositorio:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #d43737;
+  transition:400ms ease all;
+}
+.btn-repositorio:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-repositorio:hover:before,.btn-repositorio:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
 
@@ -235,6 +329,7 @@ a {
     .cabecera {
         flex-direction: row;
         justify-content: space-between;
+        gap: 1rem;
 
     }
 
@@ -243,18 +338,21 @@ a {
     }
 
     .cabecera__titulo {
-        font-size: 1.5rem;
+        font-size: 1rem;
+
     }
 
-    .navegacion__lista {
+    .navegacion__lista{
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 0.5rem;
         margin-top: 0;
-        margin-right: 0;
+        margin-right: 15px;
+        font-size: small;
     }
 
-    .navegacion__elemento a {
+    .navegacion__elemento,
+    .navegacion__Contacto {
         font-size: 1rem;
     }
 
@@ -263,13 +361,18 @@ a {
         height: 100px;
         padding: 1rem;
     }
+    .btn-repositorio{
+        padding:0 2em;
+        height:60px;
+        font-size:1.6em;
+    }
 }
-
 /* Pantallas grandes */
 
 @media (min-width: 1024px) {
     .cabecera__titulo {
         font-size: 1.8rem;
+
     }
 
     .navegacion__elemento a {
