@@ -98,7 +98,8 @@ a {
 .sobre-mi,
 .habilidades,
 .aficiones,
-.formacion{
+.formacion,
+.proyectos{
     padding: 1rem;
     text-align: center;
     align-content: center;
@@ -106,7 +107,6 @@ a {
     margin: 2rem;
     background: #fafafa10;
     backdrop-filter: blur(0.2rem);
-
 
 }
 
@@ -218,17 +218,6 @@ a {
     width: 250px;
 }
 /*------------------------------ Experiencia Profesional---------------------------------*/
-
-.proyectos {
-    padding: 1rem;
-    text-align: center;
-    align-content: center;
-    border-radius: 5rem;
-    margin: 2rem;
-    background: #fafafa10;
-    backdrop-filter: blur(0.2rem);
-}
-  
   
 .Proyecto {
     display: flex;
@@ -320,6 +309,12 @@ a {
 }
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto{
+    padding: 1rem;
+    text-align: center;
+    align-content: center;
+    background: #f3f8c8c7;
+}
 
 
 /* ------------------------------ Responsividad ---------------------------------------*/
