@@ -15,7 +15,7 @@
 <body>
     <!-- Menú -->
     <header class="cabecera">
-        <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
+        <img class="cabecera__logo" src="assets/vector.png" alt="Logo" id="logo"  style="cursor: pointer;" >
         <h1 class="cabecera__titulo">Brian Canales</h1>
         <nav class="navegacion">
             <ul class="navegacion__lista">
@@ -24,7 +24,7 @@
                 <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
                 <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
                 <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
-                <li class="navegacion__Contacto"><a href="#contacto">Contacto</a></li>
+                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -36,16 +36,17 @@
             <h2 class="presentacion__titulo">¡Hola!, mi nombre es Brian Canales,</h2>
             <p class="presentacion__subtitulo">y soy un desarrollador de Front-End en proceso</p>
             <ul class="redes">
-                <li class="redes__img">
-                    <a href="https://github.com/RyanMorentz">Github
+                <div class="redes__img">
+                    <!-- Enlace a GitHub -->
+                    <a href="https://github.com/RyanMorentz" target="_blank" rel="noopener noreferrer">
                         <img src="assets/arrow.png" alt="Github">
                     </a>
-                </li>
-                <li class="redes__img">
-                    <a href="https://www.linkedin.com/in/brian-canales-22801b314/">Linkedin
-                        <img src="assets/icons8-linkedin-48.png" alt="Linkedin">
+                    
+                    <!-- Enlace a LinkedIn -->
+                    <a href="https://www.linkedin.com/in/brian-canales-22801b314/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icons8-linkedin-48.png" alt="LinkedIn">
                     </a>
-                </li>
+                </div>
             </ul>
         </div>
     </section>
@@ -120,7 +121,7 @@
                 <div>
                     <h2 class="Name">Alura</h2>
                     <h3 class="formacion__nombre">Desarrollo Front-End</h3>
-                    <p class="formacion__detalles">2024 - Alura</p>
+                    <p class="formacion__detalles">2024 - En Proceso.</p>
                 </div>
             </li>
             <li class="formacion__elemento">
@@ -137,35 +138,47 @@
     <!-- Sección de Proyectos -->
     <section class="proyectos" id="proyectos">
         <h2 class="titulo-proyecto">Proyectos</h2>
-
+    
+        <!-- Proyecto 1 -->
         <section class="Proyecto">
             <img src="assets/forca_print.png" alt="Adivina-el-numero" class="Proyecto-alura">
             <div class="proyecto__detalles">
                 <h3>NUMERO SECRETO</h3>
                 <div class="proyecto__botones">
-                    <a href="https://github.com/RyanMorentz/Adivina-el-numero.git">
-                    <button id="btn-repositorio" class="btn-repositorio">Repositório</button></a>
-                    <a href="https://ryanmorentz.github.io/Adivina-el-numero/">
-                    <button id="btn-repositorio" class="btn-repositorio">Ver Demo</button></a>
+                    <!-- Enlace al repositorio -->
+                    <a href="https://github.com/RyanMorentz/Adivina-el-numero.git" target="_blank" rel="noopener noreferrer">
+                        <button class="btn-repositorio">Repositório</button>
+                    </a>
+                    <!-- Enlace a la demo -->
+                    <a href="https://ryanmorentz.github.io/Adivina-el-numero/" target="_blank" rel="noopener noreferrer">
+                        <button class="btn-repositorio">Ver Demo</button>
+                    </a>
                 </div>
             </div>
         </section>
-
+    
+        <!-- Proyecto 2 -->
         <section class="Proyecto">
             <img src="assets/secretcode_print.png" alt="Encriptador" class="Proyecto-alura">
             <div class="proyecto__detalles">
                 <h3>ENCRIPTADOR DE TEXTO</h3>
-                <div class="proyecto__botones">  
-                    <a href="https://github.com/RyanMorentz/Encriptado-Challenger.git">
-                    <button id="btn-repositorio" class="btn-repositorio">Repositório</button></a>
-                <a href="https://encriptacion-challenger-alura.vercel.app/">
-                    <button id="btn-repositorio" class="btn-repositorio">Ver Demo</button></a>
+                <div class="proyecto__botones">
+                    <!-- Enlace al repositorio -->
+                    <a href="https://github.com/RyanMorentz/Encriptado-Challenger.git" target="_blank" rel="noopener noreferrer">
+                        <button class="btn-repositorio">Repositório</button>
+                    </a>
+                    <!-- Enlace a la demo -->
+                    <a href="https://encriptacion-challenger-alura.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <button class="btn-repositorio">Ver Demo</button>
+                    </a>
                 </div>
-            </div> 
+            </div>
         </section>
+    
     </section>
 
     <!-- Sección de Contacto -->
+
     <section class="contacto" id="contacto">
         <h2 class="contacto__titulo">Contacto</h2>
         <form class="contacto__formulario">
@@ -174,6 +187,11 @@
             <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
             <button class="contacto__boton" type="submit">Enviar</button>
         </form>
+    </section>
+    
+    <section class="foot">
+        <h2>Desarrollo por Brian Canales 2024</h2> 
+
     </section>
 </body>
     <script src="script.js"></script>

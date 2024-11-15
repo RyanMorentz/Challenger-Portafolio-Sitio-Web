@@ -28,11 +28,12 @@ a {
 }
 
 /* ------------------------------ Sección Menú -------------------------------*/
+
 .cabecera {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-de-fondo-menu);
     background: #ffffffa4;
     margin: 1rem;
@@ -43,12 +44,14 @@ a {
 }
 
 .cabecera__logo {
-    max-width: 100px; /* Ajuste para pantallas pequeñas */
+    /* Ajuste para pantallas pequeñas */
     margin: 1rem;
+    width: 1rem;
 }
 
 .cabecera__titulo {
     font-size: 1.2rem;
+
 
 }
 
@@ -57,43 +60,76 @@ a {
 }
 
 
-
-/* ------------------------------ Sección Presentación ------------------------------*/
-
-.presentacion{
+    /* ------------------------------ Sección Presentación ------------------------------ */
+.presentacion {
     display: flex;
-    padding-top: 95px;
-    padding-left: 15px;
     flex-direction: column;
-    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    margin: 2rem;
+    text-align: center;
 }
-.presentacion__foto{
-    width: 250px;
-    
 
+.presentacion__foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff; /* Borde blanco alrededor de la foto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
-.presentacion__contenedor{
 
-    align-content: center;
-
-
+.presentacion__contenedor {
+    max-width: 800px;
+    margin-top: 20px;
 }
-.presentacion__subtitulo{
+
+.presentacion__titulo {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.presentacion__subtitulo {
+    font-size: 1.2rem;
+    color: #f3f3f3;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    margin-bottom: 20px;
     text-align: justify;
-    
-
+    font-style: italic;
 }
-.redes{
+
+.redes {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 15px;
-    font-size:larger;
-    font-weight: bolder;
-    
-
+    justify-content: center;
+    gap: 20px;
 }
-    
+
+.redes__img a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.redes__img a:hover {
+    transform: translateY(-5px); /* Efecto de hover para las redes */
+}
+
+.redes__img img {
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease;
+}
+
+.redes__img img:hover {
+    opacity: 0.7; /* Efecto de hover en las imágenes de las redes */
+}
+
+
+
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 .sobre-mi,
 .habilidades,
@@ -110,22 +146,13 @@ a {
 
 }
 
-.redes__img{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-}
-.sobre-mi__texto,
-.presentacion__subtitulo{
+
+.sobre-mi__texto
+/*.presentacion__subtitulo*/{
     text-align: justify;
     color: white;
     text-shadow: 1px 1px 0px #000000;
     font-size: 18px;
-}
-
-.presentacion__titulo{
-    text-shadow: 1px 1px 0px #000000;
-    color: white;
 }
 
 /*--------------Sección de Habilidades y ección de Aficiones  ------------------------------*/
@@ -309,13 +336,141 @@ a {
 }
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
-.contacto{
-    padding: 1rem;
-    text-align: center;
-    align-content: center;
+
+.contacto {
     background: #f3f8c8c7;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
 }
 
+.contacto__titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Estilo de los campos de texto */
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacto__campo {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contacto__campo:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Estilo de los campos de texto - área de texto */
+.contacto__campo--textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Estilo del botón */
+.contacto__boton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contacto__boton:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animaciones de los campos de texto */
+.contacto__campo {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+.contacto__campo:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.contacto__campo:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.contacto__campo:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Animación del botón */
+.contacto__boton {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: slideInButton 0.5s ease-out forwards;
+    animation-delay: 0.8s;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.foot{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    background: #835d53c7;
+    text-align: center;
+    align-items: flex-start;
+    padding: 1rem;
+    align-content: center;
+
+}
 
 /* ------------------------------ Responsividad ---------------------------------------*/
 
@@ -348,11 +503,6 @@ a {
         font-size: small;
     }
 
-    .navegacion__elemento,
-    .navegacion__Contacto {
-        font-size: 1rem;
-    }
-
     .habilidades__elemento {
         width: 100px;
         height: 100px;
@@ -363,29 +513,101 @@ a {
         height:60px;
         font-size:1.6em;
     }
+    .contacto {
+        padding: 40px 15px;
+    }
+
+    .contacto__titulo {
+        font-size: 2rem;
+    }
+
+    .contacto__campo, .contacto__boton {
+        font-size: 1rem;
+    }
+    
+    .presentacion {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .presentacion__foto {
+        width: 200px;
+        height: 200px;
+    }
+
+    .presentacion__titulo {
+        font-size: 3rem;
+    }
+
+    .presentacion__subtitulo {
+        font-size: 1.5rem;
+    }
+    .redes__img img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .navegacion__elemento a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 15px;
+        transition: background-color 1s ease;
+        border-radius: 1rem;
+        padding: 0.3rem;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease, background-color 1.5s ease;
+    }
+    .navegacion__elemento a:hover {
+        background:linear-gradient(130deg, rgba(74, 208, 241, 0.575) 0%, rgba(45, 83, 253, 0.432) 100%);
+        background-color: #aedb34;
+        border-radius: 25px;
+        transform: translateY(-3px); /* Efecto de desplazamiento más pronunciado */
+    }
 }
+
 /* Pantallas grandes */
 
 @media (min-width: 1024px) {
+    .navegacion__elemento a {
+        font-size: 25px;
+        padding: 1.5rem;
+    }
     .cabecera__titulo {
         font-size: 1.8rem;
+        text-align: center;
 
     }
-    .presentacion__contenedor{
+    .cabecera__logo {
+        width: 4rem;
 
-        align-content: center;
-    
-    
     }
-    .presentacion__titulo{
-        font-size: 50px;
-    }
-    .sobre-mi__texto,
-    .presentacion__subtitulo{
+    .sobre-mi__texto{
         text-align: justify;
         font-size: 30px;
     }
     
+    .presentacion {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 50px;
+    }
 
+    .presentacion__foto {
+        width: 200px;
+        height: 200px;
+    }
+
+    .presentacion__titulo {
+        font-size: 3.5rem;
+    }
+
+    .presentacion__subtitulo {
+        font-size: 1.7rem;
+    }
     
 }
